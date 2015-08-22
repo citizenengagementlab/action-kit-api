@@ -1,0 +1,23 @@
+{
+  "name": "action-kit",
+  "version": "0.1.0",
+  "description": "Node.js utility for interacting with the ActionKit API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ActionKit"
+  ],
+  "author": "Trevor Cords <trevor@engagementlab.org>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.4.2",
+    "lodash": "^3.10.1",
+    "request": "^2.61.0"
+  }
+}
