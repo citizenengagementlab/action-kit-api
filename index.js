@@ -1,7 +1,10 @@
 'use strict';
 
-var Request = require('./lib/request'),
-    user = require('./lib/user');
+var ActionKitRequest = require('./lib/ak-request'),
+    entity = require('./lib/entity'),
+    user = require('./lib/user'),
+    page = require('./lib/page'),
+    action = require('./lib/action');
 
 /**
  * ActionKit API
@@ -14,11 +17,14 @@ var Request = require('./lib/request'),
  * @constructor
  */
 function Api(domain, username, password) {
-    Request.call(this, domain, username, password);
+    ActionKitRequest.call(this, domain, username, password);
 
     this.User = user(this);
+    this.Page = page(this);
+    this.Action = action(this);
+    this.Tag = entity('tag', this);
 }
 
-Api.prototype = Object.create(Request.prototype);
+Api.prototype = Object.create(ActionKitRequest.prototype);
 
 exports = module.exports = Api;
