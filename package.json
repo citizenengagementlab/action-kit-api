@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/citizenengagementlab/action-kit-api.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
