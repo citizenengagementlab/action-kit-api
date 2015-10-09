@@ -1,5 +1,5 @@
 {
-  "name": "action-kit",
+  "name": "action-kit-api",
   "version": "0.1.0",
   "description": "Node.js utility for interacting with the ActionKit API",
   "main": "index.js",
