@@ -23,9 +23,10 @@ function Api(domain, username, password) {
     this.Page = page(this);
     this.Action = action(this);
     this.Tag = entity('tag', this);
-    this.SignupAction = entity('signupaction', this);
 }
 
 Api.prototype = Object.create(ActionKitRequest.prototype);
 
 exports = module.exports = Api;
+
+//TODO: Improve error handling
